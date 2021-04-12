@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript Tutorial</title>
+
+<script type="text/javascript">
+
+	// OOP (Se create objects on the head of the HTML)//
+
+	// FIRST WAY TO CONSTRUCT OBJECTS: Constructor Function //
+	function person(name, age){
+	this.name = name;
+	this.age = age;
+	this.doubleYears = doubleTheYears
+	};
+
+	// Add A Method
+	function doubleTheYears(){
+		var result = 2 * this.age
+		return result
+	}
+
+	// Creating Instances 
+	var tasos = new person('Tasos Bouzikas', 30);
+	var georgia = new person('Georgia Sarolidou', 30);	
+
+
+	/* SECOND WAY TO CONSTRUCT OBJECTS: Object Initializers (a.k.a JSON (dictionaries))
+	tasos = {name:'Tasos Bouzikas', age:30}
+	georgia = {name:'Georgia Sarolidoy', age:30}
+	*/
+
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+
+	document.write(tasos.name + '<br>' + tasos.age + tasos.doubleYears())
+
+</script>
+
+</body>
+</html>

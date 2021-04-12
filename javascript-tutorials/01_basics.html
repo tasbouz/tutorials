@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript Tutorial</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	// Single Line Comment
+	
+	/* A Lot Of Lines Of Comments
+	*/
+
+	// Setting a global variable
+	var a = 5;
+	var b = 'text <br>';
+
+	// Exposes to the page
+	document.write(a + b);
+
+	// Creates a box that shows the message
+	alert('This is an alert!');
+
+	// Increment variable a by one (same a += 1)
+	a++;
+	// Decrease variable a by one (same a +- 1)
+	a--;
+
+
+	/* If statement 
+	(Nesting works just by putting on if inside the other)
+	(Use && for AND conditions, and || for OR conditions)
+	*/
+	var apples = 10;
+	var oranges = 10;
+
+	if (apples == oranges) {
+		document.write('Apples = Oranges <br>');
+	} else if (apples != oranges){
+		document.write('Apples != Oranges <br>');
+	} else {
+		document.write('That does not make sense <br>');
+	};
+
+
+	// Switch (Instead of using nested if statements)
+	var apples = 10;
+
+	switch(apples){
+		case 10:
+			document.write('It is 10 <br>');
+			break;
+		default:
+			document.write('Not a 10 <br>');
+	};
+
+
+	// For Loop
+	for (i=0; i<10; i+=1){
+		document.write("This is the " + i + "th iteration! <br>");
+	};
+
+
+	// While Loop
+	var i =1
+
+	while (i<10) {
+		document.write("This is the " + i + "th iteration! <br>");
+		i+=1;
+	};
+
+
+	//Do Loop (The other way around from While)
+	var i =1
+
+	do {
+		document.write("This is the " + i + "th iteration! <br>");
+		i+=1;
+	} while (i<10);
+
+
+	// Functions (we can also call other functions within functions)
+	function my_function(x,y){
+		// Setting a local variable
+		var result = x + y;
+		return result;
+	};
+
+	document.write(my_function(3,4));
+
+
+	// Array (a.k.a Lists & Dictionaries).  (Properties And Methods Of Arrays (https://www.w3schools.com/jsref/jsref_obj_array.asp))
+	var names = new Array('Tasos', 'Georgia');
+	names[2] = 'Anestis';
+	names["color"] = 'blue'
+
+	document.write(names[0] + names["color"]);
+
+
+	// Prompt (Ask the user for something)
+	var numbers = new Array();
+	numbers[0] = prompt("Gimme a number", "");
+
+	document.write(numbers);
+
+</script>
+
+</body>
+</html>
