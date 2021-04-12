@@ -2,7 +2,7 @@
 
 Notes I kept while I was learning programming languages.
 
-## Go Tutorials
+## - Go Tutorials
 
 The notes I kept when I was learning Go.
 
@@ -12,7 +12,7 @@ You will need to install [Go](https://golang.org/doc/install) (version 1.11 or l
 
 I run the code using [GoLand](https://www.jetbrains.com/go/).
 
-## JavaScript Tutorials
+## - JavaScript Tutorials
 
 The notes I kept when I was learning JavaScript.
 
@@ -20,7 +20,7 @@ The notes I kept when I was learning JavaScript.
 
 Open the html files with a browser to run them.
 
-## Python Tutorials
+## - Python Tutorials
 
 The notes I kept when I was learning python.
 
@@ -41,7 +41,7 @@ jupyter notebook
 
 Each notebook uses a collection of external packages, install whatever you need accordingly.
 
-## R Tutorials
+## - R Tutorials
 
 The notes I kept when I was learning R.
 
