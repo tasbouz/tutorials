@@ -2,12 +2,15 @@ import itertools
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score 
 
-def confusion_matrix_plot(y_test, y_pred):
+
+def classification_evaluation(y_test, y_pred):
+    
+    y_test, y_pred = tf.round(y_test), tf.round(y_pred)
 
     # create the confusion matrix
-    cm = confusion_matrix(tf.round(y_test), tf.round(y_pred))
+    cm = confusion_matrix(y_test, y_pred)
 
     # normalize confusion matrix
     cm_norm = cm.astype("float") / cm.sum(axis=1)[:, np.newaxis] 
@@ -44,3 +47,16 @@ def confusion_matrix_plot(y_test, y_pred):
                  size=15)
     
     plt.show()
+    
+    accuracy = round(accuracy_score(y_test, y_pred),3)
+    print("Accuracy = ", accuracy)
+    
+    precision = round(precision_score(y_test, y_pred),3)
+    print("Precision = ", precision)
+    
+    recall = round(recall_score(y_test, y_pred),3)
+    print("Recall = ", recall)
+    
+    f_1_score = round(f1_score(y_test, y_pred),3)
+    print("F1 Score = ", f_1_score)
+
