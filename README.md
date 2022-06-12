@@ -20,6 +20,24 @@ The notes I kept when I was learning JavaScript.
 
 Open the html files with a browser to run them.
 
+## - Python Tutorials
+
+The notes I kept when I was learning python.
+
+### Prerequisites
+
+You will need to install [Python](https://www.python.org/downloads/) (version 3.4 or later),
+and then jupyter notebooks using:
+
+```
+pip3 install jupyter
+```
+
+Launch jupyter by running:
+
+```
+jupyter notebook
+```
 ## - R Tutorials
 
 The notes I kept when I was learning R.
